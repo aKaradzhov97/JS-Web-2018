@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #0f325a;
+    height: 100%;
+    margin: 0;
+}
+
+ul {
+    align-content: center;
+    text-align: center;
+}
+ul.topnav {
+    line-height: 1.8;
+    z-index: -1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0f325a;
+    text-align: center;
+}
+
+ul.topnav li {
+    display: inline-block;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 26px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: white;
+    color: darkblue;
+    transition-duration: 0.5s;
+}
+
+ul.topnav li a.active {background-color: white;}
+
+@media screen and (max-width: 900px){
+    ul.topnav li {
+        display: inline;
+        float: inherit;
+    }
+}
+
+main > section {
+    padding: 20px 5px;
+}
+
+.title{
+    text-align: center;
+    font-size: 0;
+}
+
+.body-text{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.titleForm{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 10px;
+}
+
+.form {
+    margin: 0 auto;
+    background: #0f325a;
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+input {
+    border: none;
+    box-shadow: none;
+    background: none;
+    outline: none;
+    color:white;
+    padding: 5px;
+    margin: 20px;
+    font: 16px 'Open Sans', sans-serif;
+    border-bottom: 1px solid white;
+    transition: .5s ease-in;
+}
+
+.inputModel {
+    color: white;
+    font: 16px 'Open Sans', sans-serif;
+    width: 60%;
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
+.inputPrice {
+    color: white;
+    font: 16px 'Open Sans', sans-serif;
+    width: 60%;
+}
+
+input:focus{
+    border-color: #FFF;
+}
+
+input[type=submit]{
+    border: 1px solid white;
+    padding: 10px 25px;
+    transition: all .2s ease-in-out;
+}
+
+input[type=submit]:hover{
+    background: #00bbbb;
+    border-color: #00bbbb;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+select  {
+    width: 60%;
+    outline: 0;
+    overflow: hidden;
+    height: 40px;
+    background: #0f325a;
+    color: #ffffff;
+    border: none;
+    padding: 5px 3px 5px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border-radius: 1px;
+    border-bottom: 1px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+select option {
+    border: 1px solid #000;
+    background: #0f325a;
+}
+select option::selection {
+    color: #ffffff;
+}
+
+
+
+table{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+table th {
+    background: #DDD;
+    padding: 10px;
+}
+
+table td {
+    padding: 5px 10px;
+    background: #EEE;
+}
+
+.secondaryButton{
+    text-decoration: none;
+    color: #0f325a;
+    padding: 5px 10px;
+    transition: all .2s ease-in-out;
+}
+
+.secondaryButton:hover{
+    cursor: pointer;
+}
+
+
+.column {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #adminView a {
+        padding: 20px;
+    }
+    .column {
+        width: 100%;
+    }
+}
+
+/* Add to cart btn*/
+
+#buttonAddToCart {
+    text-align: center;
+}
+
+#buttonAddToCart {
+    text-align: center;
+}
+
+/*Admin*/
+
+#adminView {
+    text-align: center;
+}
+
+#adminView a {
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+    font-size: large;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+    margin-top: 0;
+}
+
+#adminView a:hover {
+    filter:drop-shadow(0px 0px 7px red);
+    transition-duration: 0.5s;
+}
+
+/*TOTAL ORDER PRICE*/
+.totalOrderPrice {
+    color: darkblue;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.singleProductInTable {
+    width: 70%;
+}
+
+#productNum {
+    background-color: lightblue;
+}
+
+#productNumValue {
+    background-color: lightblue;
+}

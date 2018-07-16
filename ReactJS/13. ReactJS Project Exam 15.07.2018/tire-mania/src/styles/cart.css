@@ -1,0 +1,218 @@
+.cartAds {
+    width: 90%;
+    overflow: hidden;
+    background: #0f325a;
+    margin: 20px auto;
+    padding: 20px 0;
+    text-decoration: none;
+}
+.cartAds ul {
+    padding: 0;
+    margin: 0;
+}
+.cartAds ul li {
+    list-style-type: none;
+    float: left;
+    width: 92%;
+    height: 356px;
+    background-color: #0f325a;
+    margin: 40px 0px 0px 50px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 3px;
+    z-index: 1;
+}
+.cartAds ul li:hover{
+    filter:drop-shadow(0px 0px 5px white);
+    transition-duration: 0.5s;
+}
+.cartAds ul li .productBrand {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    text-align: center;
+    font-family: Consolas, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    border-bottom: 1px solid lightgray;
+    color: darkblue;
+}
+
+.cartAds ul li .productActions {
+    position: relative;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+}
+.editLink {
+    text-align: center;
+    float: left;
+    margin-bottom:60px;
+    top:50%;
+    background-color: blue;
+    padding: 0px;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px grey;
+    height: 30px;
+    width: 30px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+.deleteLink {
+    text-align: center;
+    float: right;
+    margin-bottom:60px;
+    background-color: red;
+    padding: 0px;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px grey;
+    height: 30px;
+    width: 30px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.editLink:hover {
+    color: blue;
+    background-color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.deleteLink:hover {
+    color: red;
+    background-color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cartAds ul li .productModel {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    background: white;
+    text-align: center;
+    font-family: Consolas, sans-serif;
+    color: #000;
+    font-size: large;
+}
+.cartAds ul li .productPicture {
+    width: 100%;
+    height: 180px;
+    background: white;
+    text-align: center;
+    font-family: Consolas, sans-serif;
+    font-size: large;
+}
+.cartAds ul li .productSize {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    background: white;
+    text-align: center;
+    color: #000;
+    font-family: Consolas, sans-serif;
+    font-size: 17px;
+}
+.cartAds ul li .productInfo {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    background: white;
+    text-align: center;
+    color: #000;
+    font-family: Consolas, sans-serif;
+    font-size: 17px;
+}
+.cartAds ul li .productCount {
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    background: white;
+    text-align: center;
+    color: darkblue;
+    font-family: Consolas, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    border-top: 1px solid lightgray;
+}
+.cartAds ul li .productPrice {
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    background: white;
+    text-align: center;
+    color: darkblue;
+    font-family: Consolas, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    border-top: 1px solid lightgray;
+}
+
+.cartAds ul .submitOrderForm {
+    float: left;
+    width: 92%;
+    height: 170px;
+    background-color: #0f325a;
+    margin: 40px 0px 0px 50px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 3px;
+    z-index: 1;
+    line-height: 37px;
+    text-align: center;
+    color: white;
+    font-family: Consolas, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.noProductsPage {
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 1250px) {
+    .cartAds {
+        width: 100%;
+        padding: 0;
+    }
+    .cartAds ul li {
+        float: none;
+        width: 90%;
+        margin: 40px auto;
+    }
+    .cartAds ul .submitOrderForm {
+        float: none;
+        width: 90%;
+        margin: 40px auto;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .cartAds {
+        width: 100%;
+        padding: 0;
+    }
+    .cartAds ul li {
+        float: none;
+        width: 90%;
+        margin: 40px auto;
+    }
+    .cartAds ul .submitOrderForm {
+        float: none;
+        width: 90%;
+        margin: 40px auto;
+    }
+}

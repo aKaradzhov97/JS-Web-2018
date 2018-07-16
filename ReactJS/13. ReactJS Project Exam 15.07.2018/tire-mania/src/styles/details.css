@@ -1,0 +1,190 @@
+/*
+Generic Styling, for Desktops/Laptops
+*/
+
+.imageSlot {
+    width: 90%;
+    background-color: white;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: 5%;
+    margin-top: 2%;
+    background-color: white;
+}
+
+table td {
+    padding: 5px 10px;
+    background: white;
+}
+/* Zebra striping */
+tr:nth-of-type(even) {
+    background: #FFF;
+}
+th {
+    color: darkblue;
+    font-weight: bold;
+    background: whitesmoke;
+    padding: 10px;
+}
+td, th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+    background-color: white;
+}
+.productDetail {
+    font-weight: bold;
+}
+
+.singleProductTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 0;
+}
+
+.userInfoTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 0;
+}
+
+/*Responsive*/
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    .imageSlot {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid #ccc; }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+}
+
+/* ORDER FORM */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 45%;
+    height: 150px;
+    background-color: white;
+}
+#leftColumn {
+    margin-right: 0;
+}
+#rightColumn {
+    margin-left: 0;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 90%;
+
+    }
+    #leftColumn {
+        margin-bottom: 0;
+    }
+    #rightColumn {
+        margin-left: 5%;
+    }
+}
+
+/* Buy Btn */
+.buyButton {
+    border: 1px solid white;
+    padding: 10px 25px;
+    transition: all .2s ease-in-out;
+    background-color: #0f325a;
+    margin-top: 8%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.totalPrice {
+    color: white;
+    font-style: italic;
+}
+
+.submitOrderForm {
+    text-align: center;
+}
+
+.selectTireCount {
+    width: 15%;
+    border-color: white;
+    border-bottom: 1px solid;
+    border-top: none;
+    border-left: none;
+    text-align: center;
+    font-size: large;
+}
+
+@media screen and (max-width: 600px) {
+    .selectTireCount {
+        width: 30%;
+        font-size: medium;
+    }
+}

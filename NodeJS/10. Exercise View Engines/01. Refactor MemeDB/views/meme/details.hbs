@@ -1,0 +1,11 @@
+<div id="deletedMemeTextBox"></div>
+
+<div id="contentDiv" class="content">
+    {{#foundMeme}}
+        <img src="{{path}}" alt=""/>
+        <h3>Title  {{memeTitle}}</h3>
+        <p>{{memeDescription}}</p>
+        <button><a href="{{path}}">Download Meme</a></button>
+        <button id="deleteMemeBtn">Delete Meme via REST</button>
+    {{/foundMeme}}
+</div>

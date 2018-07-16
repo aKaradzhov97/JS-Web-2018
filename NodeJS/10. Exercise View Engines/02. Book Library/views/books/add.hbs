@@ -1,0 +1,21 @@
+<h1>Add New Book</h1>
+<div id="errBox"><h2 id="errMsg">Please fill all fields!</h2></div>
+<div id="succssesBox"><h2 id="succssesMsg">Book added successfully!</h2></div>
+<div class="container">
+    <form action="/addBook" method="POST">
+        <label for="bookTitle">Title</label>
+        <input type="text" id="bookTitle" name="title" placeholder="The title of the book" value="{{title}}">
+
+        <label for="bookYear">Year</label>
+        <input type="date" id="bookYear" name="releaseDate" placeholder="Year of release" value="{{releaseDate}}">
+
+        <label for="bookPoster">Poster URL</label>
+        <input type="text" id="bookPoster" name="imageUrl" placeholder="Link to a poster" value="{{imageUrl}}">
+
+        <label for="bookAuthor">Book author</label>
+        <input type="text" id="bookAuthor" name="author" placeholder="Book author" value="{{author}}">
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>

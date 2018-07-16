@@ -1,0 +1,13 @@
+#faqContent {
+    padding: 50px;
+}
+.faqTitle {
+    color: white;
+    font-size: xx-large;
+    font-family: Roboto;
+    text-align: center;
+}
+.faqText {
+    color: white;
+    font-size: large;
+}
