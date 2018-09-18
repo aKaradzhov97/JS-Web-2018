@@ -3,4 +3,4 @@
 <b><i>Including courses:</i></b><br>
 <b>NodeJS & ExpressJS</b><br>
 <b>ReactJS</b><br>
-<b>TBA: Angular</b>
+<b>Angular</b>
